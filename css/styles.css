@@ -1,0 +1,184 @@
+header h1 a {
+    text-decoration: none; /* 移除下劃線 */
+    color: white; /* 設置字體顏色為白色 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.category {
+    flex: 1 1 auto; /* 讓區塊根據內容自動調整寬度 */
+    max-width: 100%; /* 設置最大寬度為 100% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* 包含內邊距和邊框在內的寬度計算 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    align-items: stretch; /* 使所有子元素高度一致 */
+}
+
+
+.category img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 確保 category-list 下的鏈接在點擊後不變色，且不顯示下劃線 */
+.category-list a:link, .category-list a:visited {
+    color: black; /* 始終保持黑色 */
+    text-decoration: none; /* 移除下劃線 */
+}
+
+.category-list a:hover {
+    text-decoration: none; /* 滑鼠懸停時也不顯示下劃線 */
+}
+
+.category-list a:active {
+    color: black; /* 點擊時保持黑色 */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    flex: 1 1 200px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product a {
+    color: black; /* 設置文字顏色為黑色 */
+    text-decoration: none; /* 移除底線 */
+}
+
+.shopping-cart {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    background-color: #333; /* 與 header 相同的背景顏色 */
+    color: white; /* 與 header 相同的字體顏色 */
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-details {
+    display: none;
+    text-align: center; /* 將文字設置在中間 */
+    padding: 0; /* 移除內邊距 */
+}
+
+.cart-details li {
+    display: flex;
+    justify-content: center; /* 將項目符號與文字居中對齊 */
+    align-items: center; /* 將項目符號與文字居中對齊 */
+    margin-bottom: 20px; /* 添加間距 */
+}
+
+.shopping-cart:hover {
+    background-color: white; /* hover 時顯示的背景顏色 */
+    color: black; /* hover 時顯示的字體顏色 */
+    width: 300px; /* hover 時增加寬度 */
+}
+
+.shopping-cart:hover .cart-details {
+    display: block;
+}
+
+.shopping-cart:hover .cart-summary {
+    display: none;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.breadcrumb {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.breadcrumb ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb li+li:before {
+    content: ">";
+    margin: 0 10px; /* 調整間距使其居中 */
+    color: white;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white; /* 新增底線 */
+}

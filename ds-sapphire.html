@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Online Shop</a></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="matte.html">Matte (Cat1)</a></li>
+                <li><a href="matte-dual.html">Matte Dual (Cat2)</a></li>
+            </ul>
+        </nav>
+        <aside class="shopping-cart" id="cart">
+            <div class="cart-summary">
+                <h3>Shopping List</h3>
+                <span id="total-price">$0.00</span>
+            </div>
+            <div class="cart-details">
+                <ul id="cart-items"></ul>
+                <button id="checkout">Checkout</button>
+            </div>
+        </aside>
+    </header>
+    
+    <section class="product-detail">
+        <img src="image/ds-sapphire.webp" alt="ds-sapphire" class="product-image">
+        <img src="image/ds-sapphire-detail.webp" alt="ds-sapphire-detail" class="product-image">
+        <h2 class="product-name">Sapphire</h2>
+        <p class="product-description">Sapphire, a noble and delicate shade of blue which sparkles with mystery.</p>
+        <p class="product-description">Comes with 100 Standard size card sleeves for trading cards measuring up to 63x88 mm's (2½"x3½"). Great for TCGs like MTG, Pokémon, Lorcana & Flesh and Blood!</p>
+        <p class="product-description">Matte Sleeves, a tactile delight. Durable sleeves with a textured backing for a great hand feel and buttery smooth shuffle feel. Experience the popular feel of Dragon Shield Mattes!</p>
+        <p class="product-price">$11.99</p>
+        <input type="number" class="quantity" min="1" value="1">
+        <button class="add-to-cart" data-product="Sapphire" data-price="11.99">Add to Cart</button>
+    </section>
+    
+    <footer>
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="matte.html">Matte</a></li>
+                <li><a href="ds-sapphire.html">Sapphire</a></li>
+            </ul>
+        </nav>
+        <p>&copy; IERG4210 2025 Online Shop</p>
+    </footer>
+    
+</body>
+</html>

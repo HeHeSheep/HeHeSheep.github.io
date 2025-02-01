@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Online Shop</a></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="matte.html">Matte (Cat1)</a></li>
+                <li><a href="matte-dual.html">Matte Dual (Cat2)</a></li>
+            </ul>
+        </nav>
+        <aside class="shopping-cart" id="cart">
+            <div class="cart-summary">
+                <h3>Shopping List</h3>
+                <span id="total-price">$0.00</span>
+            </div>
+            <div class="cart-details">
+                <ul id="cart-items"></ul>
+                <button id="checkout">Checkout</button>
+            </div>
+        </aside>
+    </header>
+    
+    <main>
+        <section class="category-list">
+            <a href="matte.html" class="category-link">
+                <article class="category">
+                    <h2>Matte (Cat1)</h2>
+                </article>
+            </a>
+            <a href="matte-dual.html" class="category-link">
+                <article class="category">
+                    <h2>Matte Dual (Cat2)</h2>
+                </article>
+            </a>
+        </section>
+        <section class="instructions">
+            <h2>Introduction</h2>
+            <!-- <p>This introduction also provided in README.md </p> -->
+            <p>Since there are only two products in each catagory, you may have to resize browser till very narrow to see the effect.</p>
+            <p>List of category always at the header of each webpage.</p>
+            <p>Shopping List always at top right hand corner.</p>
+            <p>Hierarchical navigation menu always at the footer of each webpage.</p>
+        </section>      
+    </main>
+    
+    <footer>
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <p>IERG4210 2025 Online Shop</p>
+    </footer>
+    
+</body>
+</html>

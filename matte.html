@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Online Shop</a></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="matte.html">Matte (Cat1)</a></li>
+                <li><a href="matte-dual.html">Matte Dual (Cat2)</a></li>
+            </ul>
+        </nav>
+        <aside class="shopping-cart" id="cart">
+            <div class="cart-summary">
+                <h3>Shopping List</h3>
+                <span id="total-price">$0.00</span>
+            </div>
+            <div class="cart-details">
+                <ul id="cart-items"></ul>
+                <button id="checkout">Checkout</button>
+            </div>
+        </aside>
+    </header>
+    
+    <section class="product-list">
+        <article class="product">
+            <a href="ds-black.html">
+                <img src="image/ds-black.webp" alt="ds-black">
+                <h2>Black</h2>
+            </a>
+            <p>$11.99</p>
+            <input type="number" class="quantity" min="1" value="1">
+            <button class="add-to-cart" data-product="Black" data-price="11.99">Add to Cart</button>
+        </article>
+        
+        <article class="product">
+            <a href="ds-sapphire.html">
+                <img src="image/ds-sapphire.webp" alt="ds-sapphire">
+                <h2>Sapphire</h2>
+            </a>
+            <p>$11.99</p>
+            <input type="number" class="quantity" min="1" value="1">
+            <button class="add-to-cart" data-product="Sapphire" data-price="11.99">Add to Cart</button>
+        </article>
+    </section>
+    
+    <footer>
+        
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="matte.html">Matte</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; IERG4210 2025 Online Shop</p>
+    </footer>
+    
+</body>
+</html>

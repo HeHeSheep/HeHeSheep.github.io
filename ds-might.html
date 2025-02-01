@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Online Shop</a></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="matte.html">Matte (Cat1)</a></li>
+                <li><a href="matte-dual.html">Matte Dual (Cat2)</a></li>
+            </ul>
+        </nav>
+        <aside class="shopping-cart" id="cart">
+            <div class="cart-summary">
+                <h3>Shopping List</h3>
+                <span id="total-price">$0.00</span>
+            </div>
+            <div class="cart-details">
+                <ul id="cart-items"></ul>
+                <button id="checkout">Checkout</button>
+            </div>
+        </aside>
+    </header>
+    
+    <section class="product-detail">
+        <img src="image/ds-might.webp" alt="ds-might" class="product-image">
+        <img src="image/ds-might-detail.webp" alt="ds-might-detail" class="product-image">
+        <h2 class="product-name">Might</h2>
+        <p class="product-description">With might we protect.The opening line of the Rowanite Creed. Becoming a Knight of the Rowanite Order is no easy feat. The Order only recruits the most capable fighters.</p>
+        <p class="product-description">Comes with 100 Standard size card sleeves for trading cards measuring up to 63x88 mm's (2½"x3½"). Great for TCGs like MTG, Pokémon, Lorcana & Flesh and Blood!</p>
+        <p class="product-price">$14.49</p>
+        <input type="number" class="quantity" min="1" value="1">
+        <button class="add-to-cart" data-product="Might" data-price="14.49">Add to Cart</button>
+    </section>
+    
+    <footer>
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="matte-dual.html">Matte Dual</a></li>
+                <li><a href="ds-might.html">Might</a></li>
+            </ul>
+        </nav>
+        <p>&copy; IERG4210 2025 Online Shop</p>
+    </footer>
+    
+</body>
+</html>
